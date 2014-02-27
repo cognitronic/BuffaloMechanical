@@ -1,0 +1,248 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Buffac.Master.Main" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head runat="server">
+    <meta charset="utf-8">
+        <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+
+        <meta name="description" content="Buffalo's Mechanical, Inc. is a commercial/industrial Mechanical Contractor serving Northern/Central California by providing quality HVAC construction and service since 1995. ">
+        <meta name="keywords" content="Commercial air conditioners, commercial heating, commercial cooling, commercial HVAC systems, heating systems, packaged rooftop units, commercial heat pumps, commercial controls, split systems, Lennox Commercial, Broan, Carrier, Cook, Day & night, Goodman, Greenheck, PennBarry, Titus, Trane, York, American Metal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Styles/animate.css" rel="stylesheet" />
+    <link href="/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="/Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Styles/flexslider.css" rel="stylesheet" />
+    <link href="/Styles/font-awesome-ie7.css" rel="stylesheet" />
+    <link href="/Styles/font-awesome.css" rel="stylesheet" />
+    <link href="/Styles/ie8.css" rel="stylesheet" />
+    <link href="/Styles/jquery.onebyone.css" rel="stylesheet" />
+    <link href="/Styles/layerslider.css" rel="stylesheet" />
+    <link href="/Styles/mediaelementplayer.css" rel="stylesheet" />
+    <link href="/Styles/prettyPhoto.css" rel="stylesheet" />
+    <link href="/Styles/skin.css" rel="stylesheet" />
+    <link href="/Styles/skins/verendus/skin.css" rel="stylesheet" />
+    <link href="/Styles/style.css" rel="stylesheet" />
+    <link href="/Styles/dark-red.css" rel="stylesheet" />
+
+      <!--  WebFont 
+  =============================================== -->
+
+  <!-- Javascripts
+  =============================================== --> 
+   
+        <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" media="all" href="Styles/ie8.css" />    
+        <![endif]-->        
+
+        <script src="/Scripts/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="/Scripts/jquery-1.8.3.min.js"></script>
+        <script src="/Scripts/jquery-easing-1.3.js"></script>
+		
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+
+        function updateCurrentNav(currentItem) {
+            $("#header-menu > li").each(function () {
+                $(this).removeClass("active current-menu-item");
+                if ($(this).children("a").text() == currentItem)
+                    $(this).addClass("active current-menu-item");
+            });
+        }
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38697627-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+</head>
+<body>
+         <!--[if lt IE 8]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+
+        <div class="topbar row-fluid"> <!-- Top Bar -->
+            <div class="container">
+                
+                <div class="sitemap-holder span4">
+                </div>
+ <div class="social-media social-light span4 offset4 "> <!-- Top bar Social Media  -->
+                    <ul class="clearfix">
+                        <li class="social-icons-linkedin-icon">
+                            <a title="LinkedIn" href="http://www.linkedin.com/pub/jason-buffalow/12/183/ba6"></a><div></div>
+                        </li>
+            
+                        <li class="social-icons-facebook-icon">
+                            <a title="Facebook" href="https://www.facebook.com/pages/Buffalos-Mechanical-Inc/124597717595690"></a><div></div>
+                        </li>
+                                              <li class="social-icons-bluebook-icon">
+                            <a title="The Bluebook" href="http://www.thebluebook.com/index.php?id=30&bkid=33&request=search&srch=name&keyword=buffalos&class="></a><div></div>
+                        </li>
+
+                    </ul>
+                </div>            </div>
+        </div> <!-- Close Top Bar -->
+
+        <div id="wrapper" class="boxed"> <!-- Page Wrapper: Boxed class for boxed layout - Fullwidth class for fullwidth page --> 
+            
+            <div class="header-background"> <!-- Header Background -->
+                <div id="header-container" class="clearfix">  <!-- Header Container, contains logo and contact button -->
+                    <header class="clearfix">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="span7 logo">
+                                    <a href="/">
+                                        <img src="/Images/logo.png" alt="Buffalo's Mechanical, Inc." title="Buffalo's Mechanical, Inc." />
+                                    </a>
+                                </div>
+
+                                <div class="header-contact button">
+                                    <ul class="clearfix">
+                                            <li class="phone-number" style="font-size:18px;">
+                                                <i class="icon-phone"></i>1(209) 599-1700
+                                            </li>
+                      
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </header>       
+                </div>
+
+                <div class="header-wrap"> <!-- Header Wrapper, contains Mene and Slider -->
+                    <div class="header-menu"> <!-- Main Menu -->
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="nav-menu">  
+
+                                    <div class="menu-mobile-wrapper"> <!-- Menu Mobile Wrapper -->
+                                        <a id="menu-mobile-trigger"></a>
+                                    </div>
+
+                                    <span class="menu-slider hidden-phone"></span> <!-- Menu Slider -->
+                                    <ul id="header-menu" class="menu">
+                                        <li class="active current-menu-item">
+                                            <a href="/Default.aspx">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="/About.aspx">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Construction.aspx">Construction</a>
+                                        </li>
+                                        <li>
+                                            <a href="/HVACService.aspx">HVAC Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="/RecentProjects.aspx">Recent Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Contact.aspx">Contact Us</a>
+                                        </li>                                        
+                                        <li>
+                                            <a href="/Employment.aspx">Employment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              
+                            </div>   
+                        </div>        
+                    </div> <!-- Close Main Menu -->
+                </div> <!-- Close wrapper -->
+                
+</div>
+        
+        <div class="page-top-stripes"></div> <!-- Page Background Stripes -->
+        <div class="page"> <!-- Page -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+              <footer> <!-- Footer -->
+                <div class="page-out clearfix">
+                    <div class="container">
+                        <div class="row-fluid">
+                            <div class="footer-logo span3">
+                            </div>
+                            <div class="top-off-page span1 offset8">
+                                <a href="#"><i class="icon-arrow-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-meta"> <!-- Footer meta -->
+                    <div class="container">
+                        <div class="row-fluid">
+                            <div class="sitemap-holder span7">
+                                <ul class="sitemap-menu clearfix">
+                                    <li>
+                                        <a href="/Default.aspx">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/About.aspx">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Construction.aspx">Construction</a>
+                                    </li>
+                                    <li>
+                                        <a href="/HVACService.aspx">HVAC Service</a>
+                                    </li>
+                                     <li>
+                                        <a href="/RecentProjects.aspx">Recent Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Contact.aspx">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Employment.aspx">Employment</a>
+                                    </li>
+
+                                </ul>
+                            </div>  
+                            <div class="copyright span4 offset1"><p>© Copyright 2012 - <a href="#">Buffalo's Mechanical, Inc.</a> by <a href="www.ravenartmedia.com">Raven Art Media</a></p></div>                        
+                        </div>
+                    </div>
+                </div> <!-- Close Footer meta -->
+            </footer> <!-- Close Footer -->
+        </div> <!-- Close Page -->
+    </div>
+                <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap-tooltip.js"></script>
+                <script>
+                    $('.tooltip').tooltip({
+                        animation: false
+                    });
+
+                </script>
+                <script src="/Scripts/jquery.hoverdir.js"></script>
+                <script src="/Scripts/superfish.js"></script>
+                <script src="/Scripts/supersubs.js"></script>
+                <script src="/Scripts/jquery.preloadify.js"></script>
+                <script src="/Scripts/jquery.validate.js"></script>
+                <script src="/Scripts/jquery.tweet.js"></script>
+                <script src="/Scripts/jquery.flexslider.js"></script>
+                <script src="/Scripts/layerslider.kreaturamedia.jquery.js"></script>
+                <script src="/Scripts/jquery.prettyPhoto.js"></script>
+                <script src="/Scripts/jquery.jcarousel.min.js"></script>
+                <script src="/Scripts/jquery.isotope.min.js"></script>
+                <script src="/Scripts/retina.js"></script>
+                <script src="/Scripts/custom.js"></script>
+                
+   
+</body>
+</html>

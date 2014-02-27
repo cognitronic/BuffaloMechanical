@@ -1,0 +1,220 @@
+/* Red Color - #cf4e49
+=================================================== */
+.flex-control-paging li a.flex-active, .flex2-control-paging li a.flex2-active {
+  background: #cf4e49;
+  border: 1px solid #b53530;
+}
+
+.flex-control-paging li a:hover, .flex2-control-paging li a:hover {
+  border: 1px solid #b53530;
+  background: #8d2925;
+}
+
+.camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont {
+  background: #cf4e49;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li {
+  background: #cf4e49;
+}
+
+#main-nav ul li > a:hover, #main-nav ul li:hover > a, #main-nav ul li ul, .social-icons, .camera_caption > div h2, .camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont, .features-2 .columns img, .widget-slide-direction-nav a.widget-slide-prev:hover, a.widget-slide-next:hover, .percentage span.perc-overlay {
+  background-color: #cf4e49;
+}
+
+.header-alt2 #main-nav li > a.active, .header-alt2 #main-nav li > a:hover, .header-alt2 #main-nav ul ul li:hover > a, .header-alt #main-nav.nav2 ul ul li:hover > a, .header-alt2 #main-nav.nav2 li.sfHover > a, .da-slide h2 {
+  color: #cf4e49;
+}
+
+.header-alt2 .nav2, .header-alt2 #main-nav ul li:hover ul, .header-alt2 #main-nav ul li ul {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 2px #cf4e49;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 2px #cf4e49;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 2px #cf4e49;
+}
+
+.container a {
+  color: #cf4e49;
+}
+
+.widget a:hover, .accordion-head:hover, .accordion-head.ui-accordion-header-active, .breadcrumbs a,
+.portfolio-title a, .pagination a, .works-title a, .blog-content a, .post-title a, a.post-more, .blog-content a,
+.post-wrapper a {
+  color: #cf4e49;
+}
+
+.breadcrumbs a:hover, .portfolio-title a:hover, .pagination a:hover, .works-title a:hover,
+.blog-content a:hover, .post-title a:hover, .post-meta a:hover, a.post-more:hover, .post-wrapper a:hover, .container a:hover {
+  color: #2a2a2a;
+}
+
+.widget-tags a:hover {
+  border: 1px solid #b53530;
+  background: #cf4e49 url(../img/arrows2.png) no-repeat left center;
+}
+
+.works-direction-nav a.works-prev:hover, a.works-next:hover, .blog-direction-nav a.blog-prev:hover, a.blog-next:hover,
+.works-direction-nav a.works2-prev:hover, a.works2-next:hover, .blog2-direction-nav a.blog2-prev:hover, a.blog2-next:hover,
+.works-direction-nav a.works3-prev:hover, a.works3-next:hover, .logo-direction-nav a.logo-prev:hover, .logo-direction-nav a.logo-next:hover {
+  background-color: #cf4e49;
+}
+
+.blog-item:hover .blog-content {
+  border-bottom: 1px solid #cf4e49;
+}
+
+.cta-box {
+  background-color: #cf4e49;
+}
+
+.ui-accordion-header-active .ui-accordion-header-icon {
+  background-color: #cf4e49;
+}
+
+.tabs-head li.ui-tabs-active {
+  border-top: 2px solid #cf4e49;
+}
+
+.tabs-head li.ui-tabs-active a, .tabs-head li a:hover {
+  color: #cf4e49;
+}
+
+.testimonial-direction-nav a.testimonial-prev:hover, a.testimonial-next:hover {
+  background-color: #cf4e49;
+}
+
+.testimonial .testimonial-quote {
+  border-top: 2px solid #cf4e49;
+}
+
+.testimonial .testimonial-author .photo {
+  border: 3px solid #cf4e49;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: #cf4e49;
+  border: 1px solid #b53530;
+}
+
+.button:hover, .button.solid:hover,
+button:hover, button.solid :hover,
+input[type="submit"]:hover, input[type="submit"].solid:hover,
+input[type="reset"]:hover, input[type="reset"].solid:hover,
+input[type="button"]:hover, .button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+.button.solid:active,
+button.solid:active,
+input[type="submit"].solid:active,
+input[type="reset"].solid:active,
+input[type="button"].solid:active {
+  background: #b53530;
+  border: 1px solid #8d2925;
+}
+
+.button.solid,
+button.solid,
+input[type="submit"].solid,
+input[type="reset"].solid,
+input[type="button"].solid {
+  background: #cf4e49;
+}
+
+.dropcap1.color {
+  color: #cf4e49;
+}
+
+.dropcap2.color, .dropcap3.color {
+  background-color: #cf4e49;
+}
+
+.highlight {
+  background: #cf4e49;
+}
+
+.section-title h1 span {
+  color: #cf4e49;
+}
+
+pre span.color, code span.color {
+  color: #cf4e49;
+}
+
+.columns:hover .post-wrapper {
+  border-bottom: 1px solid #cf4e49;
+}
+
+.post-date {
+  background: #cf4e49;
+}
+
+.skill-html {
+  background: #cf4e49;
+}
+
+.skill-css {
+  background: #cf4e49;
+}
+
+.skill-jquery {
+  background: #cf4e49;
+}
+
+.skill-php-mysql {
+  background: #cf4e49;
+}
+
+.portfolio-items .columns:hover .portfolio-title {
+  border-bottom: 1px solid #cf4e49;
+}
+
+.project-slider-direction-nav li a:hover, .post-slider-direction-nav li a:hover {
+  background-color: #cf4e49;
+}
+
+.percentage span.overlay, .overlay, .works-icon {
+  background-color: #cf4e49;
+}
+
+.flex-caption, .flex-active.slide .flex-caption, .works-overlay, .portfolio-overlay, .blog-overlay {
+  background: #cf4e49;
+  background: rgba(207, 78, 73, 0.75);
+}
+
+.header-wrapper.header-alt2.blue-grad, .features-slider .columns:hover .features-description {
+  border-bottom: 2px solid #cf4e49;
+}
+
+.header-wrapper.header-alt2.blue-grad #header, .header-wrapper.blue-grad #header {
+  background: #cf4e49;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFDF8986', endColorstr='#FFCF4E49');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #df8986), color-stop(100%, #cf4e49));
+  background-image: -webkit-linear-gradient(top, #df8986 0%, #cf4e49 100%);
+  background-image: -moz-linear-gradient(top, #df8986 0%, #cf4e49 100%);
+  background-image: -o-linear-gradient(top, #df8986 0%, #cf4e49 100%);
+  background-image: linear-gradient(top, #df8986 0%, #cf4e49 100%);
+  z-index: auto;
+}
+
+.slide-content {
+  border-left: 2px solid #b53530;
+}
+
+.slide-content.content-right {
+  border-right: 2px solid #b53530;
+}
+
+.footer-widgets a {
+  color: #ffffff;
+}
+
+.footer-widgets a:hover {
+  color: #cf4e49;
+  border-bottom: 1px dotted #cf4e49;
+}

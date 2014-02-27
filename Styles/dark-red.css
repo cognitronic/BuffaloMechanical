@@ -1,0 +1,56 @@
+/***********************
+*	Dark-Red
+************************/
+
+.sitemap-menu a:hover, .mobile-menu ul li a:hover, .widget-contact-info ul li a:hover, .widget-text a:hover,
+.sidebar .widget-category ul li a:hover, .sidebar .widget-tags ul li a:hover, .list-normal ul li a:hover,
+.meta-container a:hover,  .meta-container-single .meta-categories a:hover, .widget-google-maps .company-name
+.meta-container-single .meta-comments a:hover, .meta-container-single .meta-tags a:hover, 
+.meta-container-single .meta-categories a:hover, .meta-container-single .meta-comments a:hover,
+.mejs-playpause-button.mejs-play button:hover:before, .mejs-playpause-button.mejs-pause button:hover:before,
+.mejs-volume-button.mejs-mute button:hover:before, .mejs-volume-button.mejs-unmute button:hover:before, 
+.mejs-fullscreen-button button:hover:before, .default-color {
+	color: #B61E2F;
+}
+
+a:hover, .page-title-content h1, .dropcap1, .content a, .pricing-table-alt .pricing-row, .active .accordion-arrow:before, .tooltip,
+table th, .single-navigation a:hover, .page-description a, .tweet_text a:hover, .tweet_time a:hover, .widget-contact-info p.widget-sub-title,
+.widget-blogpost-date a:hover, .format-news h4:hover, .format-news h2:hover {
+	color: #B61E2F;
+}
+
+.dropcap2, .divider-top a, .highlight, blockquote span, .dropcap3, .error-page-img, .widget-contact-form .contact-submit,
+.twitter-follow-us, .hoverdir div, .button, .tabs-nav .active a, .ui-progressbar-value, .menu-slider, .menu .sub-menu li a:hover, 
+.calltoaction, .pricing-table .title-row.pricing-orange, .widget-newsletter .contact-submit, .top-off-page a:hover,
+.mejs-controls .mejs-time-rail .mejs-time-current, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background-color: #B61E2F;
+}
+
+.shortcode-blogpost-small .blogpost-overlay:hover, .widget-contact-form .contact-submit:hover, .widget-blogpost-overlay:hover, 
+.shortcode-blogpost-medium .blogpost-overlay:hover, .shortcode-blogpost-large .blogpost-overlay:hover, .flickr-overlay:hover, .default-bgcolor {
+	background-color: #B61E2F!important;
+}
+
+.button-tabbed-active {
+	color: #B61E2F!important;
+	border-left-color: #B61E2F!important;
+}
+
+blockquote p {
+	border-color: #B61E2F;
+}
+
+/* border color */
+.dropcap3, .calltoaction, .twitter-follow-us, .button, .tabs-nav .active a, .ui-progressbar-value, .widget-newsletter .contact-submit,
+.widget-contact-form .contact-submit {
+	border: 1px solid #AF051E;
+}
+
+.portfolio-filter .button-active, .tabbed-navigation .button-active, .gallery-filter .button-active {
+	border-color: #AF051E!important;
+	background-color: #B61E2F!important;
+}
+
+.calltoaction {
+	color: #eeeeee;
+}

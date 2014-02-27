@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBF1EC08-1C0D-41D9-B75E-0AAF7D38FDB1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Buffac</RootNamespace>
+    <AssemblyName>Buffac</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Artem.GoogleMap">
+      <HintPath>..\Buffac\References\Artem.GoogleMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Construction.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Employment.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="HVACService.aspx" />
+    <Content Include="Images\about-1.jpg" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\backgrounds\bg1.jpg" />
+    <Content Include="Images\backgrounds\bg2.jpg" />
+    <Content Include="Images\backgrounds\bg3.jpg" />
+    <Content Include="Images\backgrounds\bg4.jpg" />
+    <Content Include="Images\backgrounds\bg5.jpg" />
+    <Content Include="Images\backgrounds\bg6.jpg" />
+    <Content Include="Images\backgrounds\bg7.jpg" />
+    <Content Include="Images\backgrounds\bg8.jpg" />
+    <Content Include="Images\backgrounds\bg9.jpg" />
+    <Content Include="Images\bg-carousel-nav.png" />
+    <Content Include="Images\bg-divider1.png" />
+    <Content Include="Images\bg-divider2.png" />
+    <Content Include="Images\blockquote-bg.png" />
+    <Content Include="Images\blogpost-hover-icon-100x100.png" />
+    <Content Include="Images\blogpost-hover-icon-80x80.png" />
+    <Content Include="Images\blogpost-overlay-100x100.png" />
+    <Content Include="Images\blogpost-overlay-80x80.png" />
+    <Content Include="Images\code.png" />
+    <Content Include="Images\express.gif" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\footer-bg.png" />
+    <Content Include="Images\footer-container-bg.png" />
+    <Content Include="Images\footer-verendus-logo.png" />
+    <Content Include="Images\grab.png" />
+    <Content Include="Images\header-bg.png" />
+    <Content Include="Images\info-globe.png" />
+    <Content Include="Images\info-mail.png" />
+    <Content Include="Images\info-phone.png" />
+    <Content Include="Images\linkedin.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\mapmarker.png" />
+    <Content Include="Images\menu-search-icon-white.png" />
+    <Content Include="Images\menu-search-icon.png" />
+    <Content Include="Images\placeholder\about.jpg" />
+    <Content Include="Images\placeholder\aboutus-image-225x270.png" />
+    <Content Include="Images\placeholder\aboutus-team-570x300.png" />
+    <Content Include="Images\placeholder\bbb-splash.png" />
+    <Content Include="Images\placeholder\blogpost-870x300.png" />
+    <Content Include="Images\placeholder\blogpost-author-60x60.png" />
+    <Content Include="Images\placeholder\blogpost-avatar-50x50.png" />
+    <Content Include="Images\placeholder\blogpost-placeholder-100x100.png" />
+    <Content Include="Images\placeholder\blogpost-placeholder-60x60.png" />
+    <Content Include="Images\placeholder\blogpost-placeholder-70x70.png" />
+    <Content Include="Images\placeholder\blogpost-placeholder-80x80.png" />
+    <Content Include="Images\placeholder\blogposts-2-225x180.png" />
+    <Content Include="Images\placeholder\blogposts-205x200.png" />
+    <Content Include="Images\placeholder\blogposts-225x180.png" />
+    <Content Include="Images\placeholder\blogposts-300x220.png" />
+    <Content Include="Images\placeholder\client-image-220x100.png" />
+    <Content Include="Images\placeholder\construction.png" />
+    <Content Include="Images\placeholder\gallery-1170x500.png" />
+    <Content Include="Images\placeholder\gallery-280x225.png" />
+    <Content Include="Images\placeholder\gina.png" />
+    <Content Include="Images\placeholder\happy-caller-225x275.jpg" />
+    <Content Include="Images\placeholder\Henry.png" />
+    <Content Include="Images\placeholder\hvac.png" />
+    <Content Include="Images\placeholder\jason.jpg" />
+    <Content Include="Images\placeholder\jason.png" />
+    <Content Include="Images\placeholder\jb.jpg" />
+    <Content Include="Images\placeholder\jb.png" />
+    <Content Include="Images\placeholder\omar.jpg" />
+    <Content Include="Images\placeholder\omar.png" />
+    <Content Include="Images\placeholder\portfolio-flex-1-1170x500.png" />
+    <Content Include="Images\placeholder\portfolio-flex-1-870x300.png" />
+    <Content Include="Images\placeholder\portfolio-flex-1-870x375.png" />
+    <Content Include="Images\placeholder\portfolio-flex-2-1170x500.png" />
+    <Content Include="Images\placeholder\portfolio-flex-2-870x300.png" />
+    <Content Include="Images\placeholder\portfolio-flex-2-870x375.png" />
+    <Content Include="Images\placeholder\portfolio-flex-3-1170x500.png" />
+    <Content Include="Images\placeholder\portfolio-flex-3-870x300.png" />
+    <Content Include="Images\placeholder\portfolio-flex-3-870x375.png" />
+    <Content Include="Images\placeholder\portfolio-flex-4-870x300.png" />
+    <Content Include="Images\placeholder\portfolio-flex-4-870x375.png" />
+    <Content Include="Images\placeholder\portfolio-image-225x180.png" />
+    <Content Include="Images\placeholder\portfolio-image-300x200.png" />
+    <Content Include="Images\placeholder\portfolio-image-465x300.png" />
+    <Content Include="Images\placeholder\portfolio-image-700x300.png" />
+    <Content Include="Images\placeholder\testi-avatar-85x85.png" />
+    <Content Include="Images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="Images\prettyPhoto\default\loader.gif" />
+    <Content Include="Images\prettyPhoto\default\sprite.png" />
+    <Content Include="Images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="Images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="Images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="Images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="Images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="Images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Images\Projects\5guysburgers.png" />
+    <Content Include="Images\Projects\AmericanMetal.png" />
+    <Content Include="Images\Projects\AmericasTireCompany.png" />
+    <Content Include="Images\Projects\anchorblue.png" />
+    <Content Include="Images\Projects\att.png" />
+    <Content Include="Images\Projects\bananarepublic.jpg" />
+    <Content Include="Images\Projects\bestbuy.png" />
+    <Content Include="Images\Projects\big5.png" />
+    <Content Include="Images\Projects\Broan.png" />
+    <Content Include="Images\Projects\Carrier.png" />
+    <Content Include="Images\Projects\chicos.jpg" />
+    <Content Include="Images\Projects\circuitcity.jpg" />
+    <Content Include="Images\Projects\Cook.png" />
+    <Content Include="Images\Projects\cvs.gif" />
+    <Content Include="Images\Projects\Day&amp;Night.png" />
+    <Content Include="Images\Projects\drivesavers.png" />
+    <Content Include="Images\Projects\express.jpg" />
+    <Content Include="Images\Projects\fedex.jpg" />
+    <Content Include="Images\Projects\footlocker.jpg" />
+    <Content Include="Images\Projects\fresh&amp;easy.jpg" />
+    <Content Include="Images\Projects\gap.jpg" />
+    <Content Include="Images\Projects\gnc.jpg" />
+    <Content Include="Images\Projects\Goodman.png" />
+    <Content Include="Images\Projects\Greenheck.png" />
+    <Content Include="Images\Projects\hollister.jpg" />
+    <Content Include="Images\Projects\jambajuice.jpg" />
+    <Content Include="Images\Projects\juicycouture.jpg" />
+    <Content Include="Images\Projects\LouisVuitton.png" />
+    <Content Include="Images\Projects\mazdaelkgrove.jpg" />
+    <Content Include="Images\Projects\McDonalds.png" />
+    <Content Include="Images\Projects\OfficeDepot.jpg" />
+    <Content Include="Images\Projects\OfficeMax.jpg" />
+    <Content Include="Images\Projects\oldnavy.jpg" />
+    <Content Include="Images\Projects\OshKosh.jpg" />
+    <Content Include="Images\Projects\palladio.jpg" />
+    <Content Include="Images\Projects\Panera.jpg" />
+    <Content Include="Images\Projects\peets.jpg" />
+    <Content Include="Images\Projects\PennBarry.png" />
+    <Content Include="Images\Projects\publicstorage.jpg" />
+    <Content Include="Images\Projects\redbrick.jpg" />
+    <Content Include="Images\Projects\RoundTable.jpg" />
+    <Content Include="Images\Projects\SevenHillsSchool.jpg" />
+    <Content Include="Images\Projects\Spencers.png" />
+    <Content Include="Images\Projects\Sprouts.jpg" />
+    <Content Include="Images\Projects\Starbucks.png" />
+    <Content Include="Images\Projects\Talbots.jpg" />
+    <Content Include="Images\Projects\Target.jpg" />
+    <Content Include="Images\Projects\thelimited.jpg" />
+    <Content Include="Images\Projects\Tiffany.jpg" />
+    <Content Include="Images\Projects\Titus.png" />
+    <Content Include="Images\Projects\Tmobile.jpg" />
+    <Content Include="Images\Projects\trane.png" />
+    <Content Include="Images\Projects\Tuttle&amp;Baily.png" />
+    <Content Include="Images\Projects\ulta.png" />
+    <Content Include="Images\Projects\UnitedRentals.jpg" />
+    <Content Include="Images\Projects\UPS.jpg" />
+    <Content Include="Images\Projects\USBank.jpg" />
+    <Content Include="Images\Projects\Vans.jpg" />
+    <Content Include="Images\Projects\Verizon.jpg" />
+    <Content Include="Images\Projects\VictoriasSecret.jpg" />
+    <Content Include="Images\Projects\Walmart.jpg" />
+    <Content Include="Images\Projects\WeightWatchers.png" />
+    <Content Include="Images\Projects\WellsFargo.jpg" />
+    <Content Include="Images\Projects\whitehouseblackmarket.jpg" />
+    <Content Include="Images\Projects\York.png" />
+    <Content Include="Images\Projects\zumiez.jpg" />
+    <Content Include="Images\searchform-bg.png" />
+    <Content Include="Images\shortcodes\price-1.png" />
+    <Content Include="Images\shortcodes\price-2.png" />
+    <Content Include="Images\shortcodes\price-3.png" />
+    <Content Include="Images\shortcodes\price-4.png" />
+    <Content Include="Images\shortcodes\price-5.png" />
+    <Content Include="Images\skin.png" />
+    <Content Include="Images\slide10-thumb.jpg" />
+    <Content Include="Images\slide10.jpg" />
+    <Content Include="Images\slide11-thumb.jpg" />
+    <Content Include="Images\slide11.jpg" />
+    <Content Include="Images\slide12-thumb.jpg" />
+    <Content Include="Images\slide12.jpg" />
+    <Content Include="Images\slide9-thumb.jpg" />
+    <Content Include="Images\slide9.jpg" />
+    <Content Include="Images\slider-nav.png" />
+    <Content Include="Images\slides\flex-slider\flex-slide-1.png" />
+    <Content Include="Images\slides\flex-slider\flex-slide-2.png" />
+    <Content Include="Images\slides\slide-1\background.png" />
+    <Content Include="Images\slides\slide-1\description.png" />
+    <Content Include="Images\slides\slide-1\ipad.png" />
+    <Content Include="Images\slides\slide-1\iphone.png" />
+    <Content Include="Images\slides\slide-1\subtitle.png" />
+    <Content Include="Images\slides\slide-1\title.png" />
+    <Content Include="Images\slides\slide-2\background.png" />
+    <Content Include="Images\slides\slide-2\description.png" />
+    <Content Include="Images\slides\slide-2\portrait-1.png" />
+    <Content Include="Images\slides\slide-2\portrait-2.png" />
+    <Content Include="Images\slides\slide-2\portrait-3.png" />
+    <Content Include="Images\slides\slide-2\portrait-4.png" />
+    <Content Include="Images\slides\slide-2\slidelogo.png" />
+    <Content Include="Images\slides\slide-2\subtitle.png" />
+    <Content Include="Images\slides\slide-2\title.png" />
+    <Content Include="Images\slides\slide-3\background.png" />
+    <Content Include="Images\slides\slide-3\description.png" />
+    <Content Include="Images\slides\slide-3\imac.png" />
+    <Content Include="Images\slides\slide-3\subtitle.png" />
+    <Content Include="Images\slides\slide-3\title.png" />
+    <Content Include="Images\slides\slide-4\background.jpg" />
+    <Content Include="Images\slides\slide-4\background.png" />
+    <Content Include="Images\slides\slide-4\description.png" />
+    <Content Include="Images\slides\slide-4\subtitle.png" />
+    <Content Include="Images\slides\slide-4\title.png" />
+    <Content Include="Images\slides\slider-fallback.png" />
+    <Content Include="Images\sprite-glyphicons.png" />
+    <Content Include="Images\sprite-social-media-sidebar.png" />
+    <Content Include="Images\sprite-social-media.png" />
+    <Content Include="Images\sprite.png" />
+    <Content Include="Images\stripes-transparent.png" />
+    <Content Include="Images\stripes.png" />
+    <Content Include="Images\switcher-icon.png" />
+    <Content Include="Images\tile1.png" />
+    <Content Include="Images\tile2.png" />
+    <Content Include="Images\tile3.png" />
+    <Content Include="Images\tile4.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\verendus-logo.png" />
+    <Content Include="Images\widget-flickr-hover-icon-60x60.png" />
+    <Content Include="Images\widget-flickr-hover-icon-70x70.png" />
+    <Content Include="Images\widget-flickr-overlay-60x60.png" />
+    <Content Include="Images\widget-flickr-overlay-70x70.png" />
+    <Content Include="Images\widget-twitter-overlay-32x32.png" />
+    <Content Include="Images\works-1.jpg" />
+    <Content Include="Images\works-2.jpg" />
+    <Content Include="Images\works-3.jpg" />
+    <Content Include="Images\works-7.jpg" />
+    <Content Include="Images\works-8.jpg" />
+    <Content Include="Images\world-map-bg.png" />
+    <Content Include="packages.config" />
+    <Content Include="Master\Main.Master" />
+    <Content Include="Global.asax" />
+    <Content Include="RecentProjects.aspx" />
+    <Content Include="Scripts\bootstrap-tooltip.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\jquery-easing-1.3.js" />
+    <Content Include="Scripts\jquery-ui-1.9.1.custom.min.js" />
+    <Content Include="Scripts\jquery.flexslider.js" />
+    <Content Include="Scripts\jquery.hoverdir.js" />
+    <Content Include="Scripts\jquery.isotope.min.js" />
+    <Content Include="Scripts\jquery.jcarousel.min.js" />
+    <Content Include="Scripts\jquery.onebyone.js" />
+    <Content Include="Scripts\jquery.onebyone.min.js" />
+    <Content Include="Scripts\jquery.preloadify.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\jquery.quovolver.js" />
+    <Content Include="Scripts\jquery.superfish.js" />
+    <Content Include="Scripts\jquery.tweet.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\layerslider.kreaturamedia.jquery.js" />
+    <Content Include="Scripts\mediaelement-and-player.js" />
+    <Content Include="Scripts\retina.js" />
+    <Content Include="Scripts\superfish.js" />
+    <Content Include="Scripts\supersubs.js" />
+    <Content Include="Styles\animate.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\dark-red.css" />
+    <Content Include="Styles\flexslider.css" />
+    <Content Include="Styles\font-awesome-ie7.css" />
+    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\ie8.css" />
+    <Content Include="Styles\jquery.onebyone.css" />
+    <Content Include="Styles\layerslider.css" />
+    <Content Include="Styles\mediaelementplayer.css" />
+    <Content Include="Styles\prettyPhoto.css" />
+    <Content Include="Styles\skin.css" />
+    <Content Include="Styles\skins\darkskin\skin.css" />
+    <Content Include="Styles\skins\darkskin\skin.png" />
+    <Content Include="Styles\skins\defaultskin\skin.css" />
+    <Content Include="Styles\skins\defaultskin\skin.png" />
+    <Content Include="Styles\skins\glass\skin.css" />
+    <Content Include="Styles\skins\glass\skin.png" />
+    <Content Include="Styles\skins\lightskin\skin.css" />
+    <Content Include="Styles\skins\lightskin\skin.png" />
+    <Content Include="Styles\skins\minimal\skin.css" />
+    <Content Include="Styles\skins\minimal\skin.png" />
+    <Content Include="Styles\skins\noskin\skin.css" />
+    <Content Include="Styles\skins\verendus\skin.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Construction.aspx.cs">
+      <DependentUpon>Construction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Construction.aspx.designer.cs">
+      <DependentUpon>Construction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employment.aspx.cs">
+      <DependentUpon>Employment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employment.aspx.designer.cs">
+      <DependentUpon>Employment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\HelperUtils.cs" />
+    <Compile Include="HVACService.aspx.cs">
+      <DependentUpon>HVACService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVACService.aspx.designer.cs">
+      <DependentUpon>HVACService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentProjects.aspx.cs">
+      <DependentUpon>RecentProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecentProjects.aspx.designer.cs">
+      <DependentUpon>RecentProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\backgrounds\Thumbs.db" />
+    <Content Include="Images\placeholder\Thumbs.db" />
+    <Content Include="Images\shortcodes\Thumbs.db" />
+    <Content Include="Images\slides\Thumbs.db" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="Styles\skins\darkskin\Thumbs.db" />
+    <Content Include="Styles\skins\defaultskin\Thumbs.db" />
+    <Content Include="Styles\skins\glass\Thumbs.db" />
+    <Content Include="Styles\skins\lightskin\Thumbs.db" />
+    <Content Include="Styles\skins\minimal\Thumbs.db" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49281/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
